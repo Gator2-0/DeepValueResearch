@@ -9,6 +9,7 @@ using DeepValueResearch.Models;
 using System.Globalization;
 using DeepValueResearch;
 using System.Reflection.PortableExecutable;
+using System.Dynamic;
 
 
 
@@ -18,16 +19,11 @@ namespace DeepValue
     {
         public static void Main()
         {
+            Logger.Initialize();
             Console.WriteLine("Deep value scrapping has been started.");
             Logger.Log("Deep value scrapping has been started.");
 
-            var inputASXCSV = "./CSV/ASX_Listed_Companies.csv";
-            if (inputASXCSV == null) 
-            { 
-                Console.WriteLine("no valid input CSV ");
-                Logger.Debug("No valid input CSV was selected");
-                return;
-            };
+            var inputASXCSV = @"../../../CSV/ASX_Listed_Companies.csv";
             List<CompanyStat> CompaniesList = new List<CompanyStat>();
 
             // Open and read the CSV file
@@ -37,17 +33,35 @@ namespace DeepValue
                 using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
                 {
                     Console.WriteLine("reading through CSV");
-                    var records = csv.GetRecord<dynamic>();
+                    var records = csv.GetRecords<dynamic>();
                     foreach (var record in records)
                     {
-                        Logger.Log($"scrapping page for {record["ASX code"]}");
-                        CompanyStat stat = HttpQueries.Scrapping(record["ASX code"]);
-                        if (stat.CompanyName != null) 
+                        try 
                         {
-                            CompaniesList.Add(stat);
-                            Logger.Log($"{stat.CompanyName} was added to the output file");
+                            // Cast the dynamic record to a dictionary
+                            var dict = (IDictionary<string, object>)record;
+
+                            // Access the ASX code from the dictionary
+                            string asxCode = dict["ASX code"].ToString();
+                            Logger.Log($"Scraping page for {asxCode}");
+
+                            CompanyStat stat = HttpQueries.Scrapping($"{asxCode}.ax"); //adding ax for aussie companies
+                            if (stat.CompanyName != null)
+                            {
+                                CompaniesList.Add(stat);
+                                Logger.Log($"{stat.CompanyName} was added to the output file");
+                            }
+
+                            // Pause for 1 second to avoid bein gblocked by yahoo
+                            Thread.Sleep(1000);
+
+                        }
+                        catch (Exception ex)
+                        {
+                            Logger.Debug(ex.Message);
                         }
                         
+
                     }
 
 
@@ -58,8 +72,8 @@ namespace DeepValue
                 Console.WriteLine($"An unexpected error occurred: {ex.Message}");
                 Logger.Debug(ex.Message);
             }
-            
-            
+
+            Logger.Log("all companies have been scrapped. Go get rich");
             SaveToCsv( CompaniesList );
 
         }
@@ -68,10 +82,12 @@ namespace DeepValue
         {
             var filePath = "companyStats.csv";  // File location
 
-            // Open or create the CSV file for writing
+            // delete the old CSV if exist
+            if(File.Exists(filePath)) { File.Delete(filePath); };
+
             using (var writer = new StreamWriter(filePath))
             {
-                // Write the header (optional)
+                // Write the header
                 writer.WriteLine("Id,CompanyName,PriceToBookValue");
 
                 // Write each company stat as a row
@@ -82,6 +98,7 @@ namespace DeepValue
             }
 
             Console.WriteLine("Data saved to companyStats.csv");
+            Logger.Log("Data saved to companyStats.csv");
         }
 
     }

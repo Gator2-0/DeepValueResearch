@@ -19,22 +19,32 @@ namespace DeepValueResearch.HTTP
             var web = new HtmlWeb();
             var doc = web.Load(url);
 
-            var PriceBook = doc.DocumentNode.SelectSingleNode("//*[@id=\"Col1-0-KeyStatistics-Proxy\"]/section/div[2]/div[1]/div/div/div/div/table/tbody/tr[7]/td[2]").InnerText;
-            var name = doc.DocumentNode.SelectSingleNode("//*[@id=\"quote-header-info\"]/div[2]/div[1]/div[1]/h1").InnerText;
-
-            if (PriceBook != null && double.Parse(PriceBook) < 0.33 )
+            try 
             {
-                Console.WriteLine(PriceBook);
-                Console.WriteLine(name);
-                result.PriceToBookValue = double.Parse(PriceBook);
-                result.CompanyName = name;
-            }
-            else
-            {
-                Console.WriteLine("No nodes found");
-            }
+                var PriceBook = doc.DocumentNode.SelectSingleNode("//*[@id=\"Col1-0-KeyStatistics-Proxy\"]/section/div[2]/div[1]/div/div/div/div/table/tbody/tr[7]/td[2]").InnerText;
+                var name = doc.DocumentNode.SelectSingleNode("//*[@id=\"quote-header-info\"]/div[2]/div[1]/div[1]/h1").InnerText;
 
-            return result;
+                if (PriceBook != null && double.Parse(PriceBook) < 0.33)
+                {
+                    Console.WriteLine(PriceBook);
+                    Console.WriteLine(name);
+                    result.PriceToBookValue = double.Parse(PriceBook);
+                    result.CompanyName = name;
+                }
+                else
+                {
+                    Console.WriteLine("No nodes found");
+                }
+
+                return result;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                Logger.Debug(ex.Message);
+                return result;
+            }
+            
 
         }
        

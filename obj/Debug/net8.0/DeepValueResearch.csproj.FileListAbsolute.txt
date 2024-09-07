@@ -31,3 +31,4 @@ D:\Project-Alfred\DeepValueResearch\obj\Debug\net8.0\refint\DeepValueResearch.dl
 D:\Project-Alfred\DeepValueResearch\obj\Debug\net8.0\DeepValueResearch.pdb
 D:\Project-Alfred\DeepValueResearch\obj\Debug\net8.0\DeepValueResearch.genruntimeconfig.cache
 D:\Project-Alfred\DeepValueResearch\obj\Debug\net8.0\ref\DeepValueResearch.dll
+D:\Project-Alfred\DeepValueResearch\bin\Debug\net8.0\CsvHelper.dll

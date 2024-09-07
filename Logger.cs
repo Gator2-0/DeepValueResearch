@@ -10,6 +10,15 @@ namespace DeepValueResearch
     {
         private static string logFilePath = "log.txt";
 
+        public static void Initialize()
+        {
+            // Clear the log file at the start of each run
+            if (File.Exists(logFilePath))
+            {
+                File.Delete(logFilePath); // Delete the file if it exists
+            }
+        }
+
         public static void Log(string message)
         {
             // Write the message to the log file with a timestamp
