@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Kc/l3H4uy+8=",
+  "dgSpecHash": "0l3uBB2hgGM=",
   "success": true,
-  "projectFilePath": "D:\\Project-Alfred\\DeepValueResearch\\DeepValueResearch\\DeepValueResearch.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Project-Alfred\\DeepValueResearch\\DeepValueResearch.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jerem\\.nuget\\packages\\htmlagilitypack\\1.11.65\\htmlagilitypack.1.11.65.nupkg.sha512"
+  ],
   "logs": []
 }
