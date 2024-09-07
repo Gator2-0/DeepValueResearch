@@ -26,7 +26,6 @@ namespace DeepValue
             var inputASXCSV = @"../../../CSV/ASX_Listed_Companies.csv";
             List<CompanyStat> CompaniesList = new List<CompanyStat>();
 
-            HttpQueries.Scrapping("AHI.AX");
 
             // Open and read the CSV file
             try

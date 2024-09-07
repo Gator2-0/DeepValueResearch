@@ -18,7 +18,7 @@ namespace DeepValueResearch.HTTP
             var url = $"https://au.finance.yahoo.com/quote/{trinquet}/key-statistics/"; 
             var web = new HtmlWeb();
             var doc = web.Load(url);
-            Console.WriteLine(doc.DocumentNode);
+            
 
             try 
             {
