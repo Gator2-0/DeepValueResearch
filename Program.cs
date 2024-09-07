@@ -26,6 +26,8 @@ namespace DeepValue
             var inputASXCSV = @"../../../CSV/ASX_Listed_Companies.csv";
             List<CompanyStat> CompaniesList = new List<CompanyStat>();
 
+            HttpQueries.Scrapping("AHI.AX");
+
             // Open and read the CSV file
             try
             {
@@ -52,8 +54,8 @@ namespace DeepValue
                                 Logger.Log($"{stat.CompanyName} was added to the output file");
                             }
 
-                            // Pause for 1 second to avoid bein gblocked by yahoo
-                            Thread.Sleep(1000);
+                            // Pause for 50ms to avoid bein gblocked by yahoo
+                            Thread.Sleep(50);
 
                         }
                         catch (Exception ex)

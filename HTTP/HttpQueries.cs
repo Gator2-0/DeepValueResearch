@@ -15,17 +15,27 @@ namespace DeepValueResearch.HTTP
         {
             CompanyStat result = new CompanyStat();
             //for each trinquet in csv search the yahoo page
-            var url = $"https://au.finance.yahoo.com/quote/{trinquet}/key-statistics/"; //test 
+            var url = $"https://au.finance.yahoo.com/quote/{trinquet}/key-statistics/"; 
             var web = new HtmlWeb();
             var doc = web.Load(url);
+            Console.WriteLine(doc.DocumentNode);
 
             try 
             {
-                var PriceBook = doc.DocumentNode.SelectSingleNode("//*[@id=\"Col1-0-KeyStatistics-Proxy\"]/section/div[2]/div[1]/div/div/div/div/table/tbody/tr[7]/td[2]").InnerText;
-                var name = doc.DocumentNode.SelectSingleNode("//*[@id=\"quote-header-info\"]/div[2]/div[1]/div[1]/h1").InnerText;
+                
+                var PriceBookNode = doc.DocumentNode.SelectSingleNode("//*[@id=\"Col1-0-KeyStatistics-Proxy\"]/section/div[2]/div[1]/div/div/div/div/table/tbody/tr[7]/td[2]");
+                var nameNode = doc.DocumentNode.SelectSingleNode("//*[@id=\"quote-header-info\"]/div[2]/div[1]/div[1]/h1");
 
-                if (PriceBook != null && double.Parse(PriceBook) < 0.33)
+                if (PriceBookNode != null )
                 {
+                    var PriceBook = PriceBookNode.InnerText;
+                    var name = nameNode.InnerText;
+                    if(double.Parse(PriceBook) > 0.33)
+                    {
+                        Console.WriteLine($"{name} price to book ratio is above 0.33");
+                        Logger.Log($"{name} price to book ratio is above 0.33");
+                        return result;
+                    }
                     Console.WriteLine(PriceBook);
                     Console.WriteLine(name);
                     result.PriceToBookValue = double.Parse(PriceBook);
@@ -38,13 +48,19 @@ namespace DeepValueResearch.HTTP
 
                 return result;
             }
+            catch (HtmlWebException ex)
+            {
+                // Handle exceptions specific to HtmlAgilityPack
+                Logger.Debug($"HtmlWebException for {trinquet}: {ex.Message}");
+            }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
-                Logger.Debug(ex.Message);
-                return result;
+                // Handle other exceptions
+                Logger.Debug($"Error scraping {trinquet}: {ex.Message}");
             }
-            
+
+            return result;
+
 
         }
        

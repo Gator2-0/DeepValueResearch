@@ -1,2 +1,10 @@
-7/09/2024 7:44:35 PM: Deep value scrapping has been started.
-7/09/2024 7:44:35 PM: Scraping page for 14D
+7/09/2024 8:21:37 PM: Deep value scrapping has been started.
+7/09/2024 8:21:39 PM: Scraping page for 14D
+7/09/2024 8:21:41 PM: 1414 Degrees Limited (14D.AX) price to book ratio is above 0.33
+7/09/2024 8:21:41 PM: Scraping page for 1AD
+7/09/2024 8:21:42 PM: AdAlta Limited (1AD.AX) price to book ratio is above 0.33
+7/09/2024 8:21:42 PM: Scraping page for 1AE
+7/09/2024 8:21:43 PM: Aurora Energy Metals Limited (1AE.AX) price to book ratio is above 0.33
+7/09/2024 8:21:44 PM: Scraping page for 1AI
+7/09/2024 8:21:45 PM: Algorae Pharmaceuticals Limited (1AI.AX) price to book ratio is above 0.33
+7/09/2024 8:21:45 PM: Scraping page for 1CG

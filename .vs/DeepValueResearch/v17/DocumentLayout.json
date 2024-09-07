@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "D:\\Project-Alfred\\DeepValueResearch\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2AFEB483-0FAE-410C-87C0-0394393B012E}|DeepValueResearch.csproj|d:\\project-alfred\\deepvalueresearch\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AFEB483-0FAE-410C-87C0-0394393B012E}|DeepValueResearch.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2AFEB483-0FAE-410C-87C0-0394393B012E}|DeepValueResearch.csproj|d:\\project-alfred\\deepvalueresearch\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AFEB483-0FAE-410C-87C0-0394393B012E}|DeepValueResearch.csproj|solutionrelative:logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2AFEB483-0FAE-410C-87C0-0394393B012E}|DeepValueResearch.csproj|d:\\project-alfred\\deepvalueresearch\\http\\httpqueries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2AFEB483-0FAE-410C-87C0-0394393B012E}|DeepValueResearch.csproj|solutionrelative:http\\httpqueries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2AFEB483-0FAE-410C-87C0-0394393B012E}|DeepValueResearch.csproj|d:\\project-alfred\\deepvalueresearch\\models\\companystat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AFEB483-0FAE-410C-87C0-0394393B012E}|DeepValueResearch.csproj|solutionrelative:models\\companystat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2AFEB483-0FAE-410C-87C0-0394393B012E}|DeepValueResearch.csproj|d:\\project-alfred\\deepvalueresearch\\csv\\asx_listed_companies.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{2AFEB483-0FAE-410C-87C0-0394393B012E}|DeepValueResearch.csproj|solutionrelative:csv\\asx_listed_companies.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{2AFEB483-0FAE-410C-87C0-0394393B012E}|DeepValueResearch.csproj|d:\\project-alfred\\deepvalueresearch\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AFEB483-0FAE-410C-87C0-0394393B012E}|DeepValueResearch.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,67 +26,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Logger.cs",
-              "DocumentMoniker": "D:\\Project-Alfred\\DeepValueResearch\\Logger.cs",
-              "RelativeDocumentMoniker": "Logger.cs",
-              "ToolTip": "D:\\Project-Alfred\\DeepValueResearch\\Logger.cs",
-              "RelativeToolTip": "Logger.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-07T09:08:06.66Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Project-Alfred\\DeepValueResearch\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Project-Alfred\\DeepValueResearch\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAAACwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-07T07:00:11.563Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ASX_Listed_Companies.csv",
-              "DocumentMoniker": "D:\\Project-Alfred\\DeepValueResearch\\CSV\\ASX_Listed_Companies.csv",
-              "RelativeDocumentMoniker": "CSV\\ASX_Listed_Companies.csv",
-              "ToolTip": "D:\\Project-Alfred\\DeepValueResearch\\CSV\\ASX_Listed_Companies.csv",
-              "RelativeToolTip": "CSV\\ASX_Listed_Companies.csv",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
-              "WhenOpened": "2024-09-07T08:44:09.898Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CompanyStat.cs",
-              "DocumentMoniker": "D:\\Project-Alfred\\DeepValueResearch\\Models\\CompanyStat.cs",
-              "RelativeDocumentMoniker": "Models\\CompanyStat.cs",
-              "ToolTip": "D:\\Project-Alfred\\DeepValueResearch\\Models\\CompanyStat.cs",
-              "RelativeToolTip": "Models\\CompanyStat.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-07T08:19:36.298Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "HttpQueries.cs",
               "DocumentMoniker": "D:\\Project-Alfred\\DeepValueResearch\\HTTP\\HttpQueries.cs",
               "RelativeDocumentMoniker": "HTTP\\HttpQueries.cs",
               "ToolTip": "D:\\Project-Alfred\\DeepValueResearch\\HTTP\\HttpQueries.cs",
               "RelativeToolTip": "HTTP\\HttpQueries.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAACcAAAAHAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAgwB8AAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-07T07:11:17.344Z",
+              "WhenOpened": "2024-09-07T09:51:04.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Project-Alfred\\DeepValueResearch\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Project-Alfred\\DeepValueResearch\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAwwBwAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-07T07:00:11.563Z",
               "EditorCaption": ""
             }
           ]
