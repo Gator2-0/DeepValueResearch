@@ -1,0 +1,15 @@
+D:\Project-Alfred\DeepValueResearch\DeepValueResearch\bin\Debug\net8.0\DeepValueResearch.exe
+D:\Project-Alfred\DeepValueResearch\DeepValueResearch\bin\Debug\net8.0\DeepValueResearch.deps.json
+D:\Project-Alfred\DeepValueResearch\DeepValueResearch\bin\Debug\net8.0\DeepValueResearch.runtimeconfig.json
+D:\Project-Alfred\DeepValueResearch\DeepValueResearch\bin\Debug\net8.0\DeepValueResearch.dll
+D:\Project-Alfred\DeepValueResearch\DeepValueResearch\bin\Debug\net8.0\DeepValueResearch.pdb
+D:\Project-Alfred\DeepValueResearch\DeepValueResearch\obj\Debug\net8.0\DeepValueResearch.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project-Alfred\DeepValueResearch\DeepValueResearch\obj\Debug\net8.0\DeepValueResearch.AssemblyInfoInputs.cache
+D:\Project-Alfred\DeepValueResearch\DeepValueResearch\obj\Debug\net8.0\DeepValueResearch.AssemblyInfo.cs
+D:\Project-Alfred\DeepValueResearch\DeepValueResearch\obj\Debug\net8.0\DeepValueResearch.csproj.CoreCompileInputs.cache
+D:\Project-Alfred\DeepValueResearch\DeepValueResearch\obj\Debug\net8.0\DeepValueResearch.sourcelink.json
+D:\Project-Alfred\DeepValueResearch\DeepValueResearch\obj\Debug\net8.0\DeepValueResearch.dll
+D:\Project-Alfred\DeepValueResearch\DeepValueResearch\obj\Debug\net8.0\refint\DeepValueResearch.dll
+D:\Project-Alfred\DeepValueResearch\DeepValueResearch\obj\Debug\net8.0\DeepValueResearch.pdb
+D:\Project-Alfred\DeepValueResearch\DeepValueResearch\obj\Debug\net8.0\DeepValueResearch.genruntimeconfig.cache
+D:\Project-Alfred\DeepValueResearch\DeepValueResearch\obj\Debug\net8.0\ref\DeepValueResearch.dll

@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Project-Alfred\\DeepValueResearch\\DeepValueResearch\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2AFEB483-0FAE-410C-87C0-0394393B012E}|DeepValueResearch.csproj|d:\\project-alfred\\deepvalueresearch\\deepvalueresearch\\deepvalueresearch.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2AFEB483-0FAE-410C-87C0-0394393B012E}|DeepValueResearch.csproj|solutionrelative:deepvalueresearch.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AFEB483-0FAE-410C-87C0-0394393B012E}|DeepValueResearch.csproj|d:\\project-alfred\\deepvalueresearch\\deepvalueresearch\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AFEB483-0FAE-410C-87C0-0394393B012E}|DeepValueResearch.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DeepValueResearch",
+              "DocumentMoniker": "D:\\Project-Alfred\\DeepValueResearch\\DeepValueResearch\\DeepValueResearch.csproj",
+              "RelativeDocumentMoniker": "DeepValueResearch.csproj",
+              "ToolTip": "D:\\Project-Alfred\\DeepValueResearch\\DeepValueResearch\\DeepValueResearch.csproj",
+              "RelativeToolTip": "DeepValueResearch.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-07T07:03:43.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Project-Alfred\\DeepValueResearch\\DeepValueResearch\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Project-Alfred\\DeepValueResearch\\DeepValueResearch\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-07T07:00:11.563Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
