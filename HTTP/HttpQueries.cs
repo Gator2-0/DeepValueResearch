@@ -11,11 +11,11 @@ namespace DeepValueResearch.HTTP
 {
     internal class HttpQueries
     {
-        public static CompanyStat Scrapping() 
+        public static CompanyStat Scrapping(string trinquet) 
         {
             CompanyStat result = new CompanyStat();
             //for each trinquet in csv search the yahoo page
-            var url = "https://au.finance.yahoo.com/quote/GOOG/key-statistics/"; //test 
+            var url = $"https://au.finance.yahoo.com/quote/{trinquet}/key-statistics/"; //test 
             var web = new HtmlWeb();
             var doc = web.Load(url);
 
@@ -38,8 +38,5 @@ namespace DeepValueResearch.HTTP
 
         }
        
-
-        //scrape the page for Price/bookValue
-        //return companies with interesting price/bookValue, discard the rest
     }
 }
